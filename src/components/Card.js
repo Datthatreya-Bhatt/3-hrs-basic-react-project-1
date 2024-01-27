@@ -14,8 +14,6 @@ const Card = ()=>{
     function deleteHandler(index){
         let temp =[...data];
 
-        console.log(temp, index);
-
         temp.map((el, i)=>{
             if(el.id === index){
                 localStorage.removeItem(el.id);
@@ -25,6 +23,7 @@ const Card = ()=>{
             }
             return el;
         })
+        
         setData(temp);
 
     }

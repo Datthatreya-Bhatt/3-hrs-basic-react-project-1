@@ -5,7 +5,7 @@ const InputComponent = ({setData, setTotal, total, data })=>{
 
     const [id, setId] = useState('');
     const [name, setName] = useState('');
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState('');
 
 
     function idHandler(e){
@@ -23,7 +23,7 @@ const InputComponent = ({setData, setTotal, total, data })=>{
         setTotal(Number((total+amount)))
         setId('');
         setName('');
-        setAmount(0);
+        setAmount('');
         localStorage.setItem(id, JSON.stringify({id, name, amount}));
 
     }
