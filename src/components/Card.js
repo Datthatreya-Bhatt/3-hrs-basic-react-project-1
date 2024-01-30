@@ -31,17 +31,17 @@ const Card = ()=>{
     return (
         <>
             <InputComponent setData={setData} setTotal={setTotal} total={total} data={data}/>
-           <h1>Products</h1>
+           <h4>Products</h4>
             {data.map((el, i)=>(
                 
-                    <li key={i}> {el.id} -{el.name} -{el.amount}
-                    <input type="button" value={"delete"} onClick={()=> deleteHandler(el.id)}/>
+                    <li key={i}> <b> {el.id} - {el.name} - {el.amount}</b>
+                    <input type="button" className="btn btn-danger btn-sm" value={"delete"} onClick={()=> deleteHandler(el.id)}/>
                     
                     </li>
                     
                
             ))}
-            <h1>Total value of Products: {total}</h1>
+            <h4>Total value of Products: {total}</h4>
 
         </>
     )

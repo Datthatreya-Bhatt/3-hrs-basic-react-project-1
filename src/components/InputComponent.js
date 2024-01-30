@@ -30,10 +30,10 @@ const InputComponent = ({setData, setTotal, total, data })=>{
 
     return (
         <>
-            <input value={id} placeholder="Product Id" type="number" className="" onChange={idHandler}/>
-            <input value={name} placeholder="Product Name" type="text" className="" onChange={nameHandler}/>
-            <input value={amount} placeholder="Amount" type="number" className="" onChange={amountHandler}/>
-            <input  type="button" className="btn btn-primary" value={"Add Product"} onClick={addProductHandler}/>
+            <input value={id} placeholder="Product Id" type="number"  onChange={idHandler}/>
+            <input value={name} placeholder="Product Name" type="text"  onChange={nameHandler}/>
+            <input value={amount} placeholder="Amount" type="number"  onChange={amountHandler}/>
+            <input  type="button" className="btn btn-primary btn-sm" value={"Add Product"} onClick={addProductHandler}/>
 
         </>
     )
